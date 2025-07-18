@@ -8,8 +8,9 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/ridha-gn/python-jenkins-project.git'
-            }
+            
+	git branch: 'main', url: 'https://github.com/ridha-gn/python-jenkins-project.git'
+}
         }
 
         stage('Install Dependencies') {
